@@ -1,19 +1,36 @@
+
 <?php
-$servername = "mySQL";
-$database = "u19978_b10";
-$username = "u19978_b10";
-$password = "yE1fQ3kE2c";
-$conn = mysqli_connect($servername, $database, $username, $password);
-if (!$conn) {
-    die("Ошибка: " . mysqli_connect_error());
+    $host       = "db4.myarena.ru"; 
+    $dbname     = "u19978_b10";         
+    $user       = "u19978_b10";         
+    $password   = "yE1fQ3kE2c";        
+   
+    try {
+$connection = new PDO('mysql:host='.$host.';dbname='.$dbname.';charset=utf8', $user, $password);
+    }
+catch(PDOException $ex) {
+die('Ошибка');
+    }
+    
+$result = $connection->query('SELECT * FROM product');
+echo "<table class = 'table' border = '1'>";
+$row = $result->fetch( PDO::FETCH_ASSOC );
+echo "<tr>";
+foreach ($row as $key => $value) {
+echo "<th>".$key."</th>";
+};
+echo "</tr>";
+
+{
+do {
+echo "<tr>";
+foreach ($row as $key => $value) {
+echo "<td>".$value."</td>";
 }
-echo "Подключено успешно";
-mysqli_close($conn);
-$sql = "SELECT * FROM Product";
-if($result = $conn->query($sql)) {
-$rowsCount = $result->num_rows;
+echo "</tr>";
+} while($row = $result->fetch( PDO::FETCH_ASSOC )); 
 }
-if ($rowsCount < 1 ->query($sql)) {
-echo "Запрос вернул 0 результатов";
-}
+
+echo "</table>";
+
 ?>
