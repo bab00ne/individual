@@ -14,7 +14,7 @@
     if ($_POST['password'] !== $_POST['confirm_password'] ) exit ('<b> Пароли не совпадают  !! </b>');
 
 
-
+    
 
 
 if (!isset ($_POST['email']) ) { // определяет введен ли емаил
@@ -37,7 +37,7 @@ $select = $connection->prepare( "SELECT COUNT(`id`) as cnt FROM `registration_fo
     exit( 'Ошибка регистрации... (Пользователь уже существует)' );
     }
 
-$password = password_hash ($_POST['password'], password_default);
+$password = password_hash ($_POST['password'], PASSWORD_BCRYPT);
 $data = [$_POST['username'], $password, $_POST['email']]; //присваивает переменной "дата" значения имени пароля и емаила
 
 
