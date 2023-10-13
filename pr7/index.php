@@ -10,7 +10,7 @@
 <body>
     <form action="action.php" ?data[role]=moderator&data [action]=work&mood=super method="post"> <b>
 <p> Почта <input type="email" name="email" required></p>
-<p> Логин <input type="text" name="name" required></p>
+<p> Логин <input type="text" name="username" required></p>
 <p> Пароль <input type="password" name="password" required min ="8" max="20"></p>
 <p> Подтвердите пароль <input type="password" name="confirm_password" required min ="8" max="20"></p>
 <p> Зарегистрироваться <input type="submit">
