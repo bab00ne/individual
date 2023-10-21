@@ -1,9 +1,15 @@
 let login = prompt('Введите логин:');
-if (login = 'Админ') {
-    let pass = prompt('Введите пароль');
-    if (pass = 'Я главный') {alert('Здравствуйте!')}
-else alert ('Неверный пароль');
+let pass = prompt('Введите пароль');
+
+if (login === 'Админ') {
+    if (pass === 'Я главный') {
+        alert('Здравствуйте!');
+    } else 
+    alert ('Неверный пароль');
     }
- else if (login = null || e.KeyCode == 27) {
+
+ else if ((login === null) || (login === '')) {
     alert('Отменено');
-} else { alert}
+} else { 
+    alert ('Неверный логин');
+}
