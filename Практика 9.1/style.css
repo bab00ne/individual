@@ -1,0 +1,16 @@
+html {
+    background: linear-gradient(207deg, rgba(148,187,233,1) 0%, rgba(238,174,202,1) 50%);
+    background-size: cover;
+    text-align: center;
+    color: beige;
+    height: 100%;
+}
+
+main {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+footer {
+    padding-top: 2vh;
+}
