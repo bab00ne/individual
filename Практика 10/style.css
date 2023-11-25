@@ -1,0 +1,9 @@
+button {
+    height: 8vh;
+    margin-left: 10vh;
+    margin-top: 10vh;
+    font-size: 2vh;
+    font-style: oblique;
+    border: 0;
+    color: rgb(0, 78, 0);
+}

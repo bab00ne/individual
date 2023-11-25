@@ -1,0 +1,14 @@
+button {
+    height: 8vh;
+    margin-left: 10vh;
+    margin-top: 10vh;
+    padding-left: 2vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-right: 2vh;
+    font-size: 2vh;
+    font-style: oblique;
+    border: 1;
+    border-radius: 15px;
+    color: rgb(0, 78, 0);
+}

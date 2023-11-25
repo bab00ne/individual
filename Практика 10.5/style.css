@@ -1,0 +1,21 @@
+
+button {
+    height: 8vh;
+    width: 10vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    margin-top: 2vw;
+    padding-left: 2vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-right: 2vh;
+    border: 1;
+    border-radius: 15px;
+    background-color: lavender;
+}
+
+details {
+    font-size: large;
+    color: lawngreen;
+    font-weight: bold;
+}
